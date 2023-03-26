@@ -20,7 +20,7 @@ Write an API method to return the total price of all books in the database.
 Get - /api/books/GetTotalBooksPrice
 
 If you have a large list of these in memory and want to save the entire list to the MS SQL Server database, what is the most efficient way to save the list with only one call to the DB server?
-we can use AddRange method in entity framework.
+- we can use AddRange method in entity framework.
 
 Add a property to the Book class that outputs the MLA (Modern Language Association) style citation as a string (https://images.app.goo.gl/YkFgbSGiPmie9GgWA). Please add whatever additional properties the Book class needs to generate the citation.
 - Done
