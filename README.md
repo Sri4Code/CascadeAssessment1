@@ -3,7 +3,7 @@ Create a REST API using ASP.NET MVC and write a method to return a sorted list o
 Get - /api/books 
 
 If you had to create one or more tables to store the Book data in a MS SQL database, outline the table design along with fields and their datatypes.
-- Book.Sql (includes table/stored proc)
+- CascadeAssessmentDB.Sql (includes table/stored proc)
 - the table designe can be improved, but i just went with minimal approach to demonstrate the functionality with the limited time.
 
 Write another API method to add an entry to the Book table.
