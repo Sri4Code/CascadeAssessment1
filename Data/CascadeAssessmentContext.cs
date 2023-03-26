@@ -28,8 +28,6 @@ namespace Data
             {
                 entity.ToTable("Book");
 
-                entity.Property(e => e.Id).HasColumnName("id");
-
                 entity.Property(e => e.AuthorFirstName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
@@ -38,7 +36,13 @@ namespace Data
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.PageNumberRange)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.PublicationDate).HasColumnType("date");
 
                 entity.Property(e => e.Publisher)
                     .HasMaxLength(50)
@@ -46,6 +50,14 @@ namespace Data
 
                 entity.Property(e => e.Title)
                     .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TitleContainer)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Url)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
             });
 

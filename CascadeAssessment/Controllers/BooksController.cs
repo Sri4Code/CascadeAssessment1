@@ -68,8 +68,8 @@ namespace CascadeAssessment.Controllers
                 return Problem("Entity set 'CascadeAssessmentContext.Books'  is null.");
             }
 
-           var rows= await _context.Database.ExecuteSqlInterpolatedAsync($"exec InsertBook @Publisher={book.Publisher},@Title={book.Title},@AuthorLastName={book.AuthorLastName},@AuthorFirstName={book.AuthorFirstName},@Price={book.Price}");
-
+           var rows= await _context.Database.ExecuteSqlInterpolatedAsync($"exec InsertBook @Publisher={book.Publisher},@Title={book.Title},@AuthorLastName={book.AuthorLastName},@AuthorFirstName={book.AuthorFirstName},@Price={book.Price},@TitleContainer={book.TitleContainer},@PublicationDate = { book.PublicationDate}, @PageNumberRange = { book.PageNumberRange},@Url = { book.Url}, @Volume ={ book.Volume}");
+           
             return rows;
         }
 
