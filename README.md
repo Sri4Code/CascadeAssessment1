@@ -1,5 +1,5 @@
 Create a REST API using ASP.NET MVC and write a method to return a sorted list of these by Publisher, Author (last, first), then title.
--Done
+- Done
 Get - /api/books 
 
 If you had to create one or more tables to store the Book data in a MS SQL database, outline the table design along with fields and their datatypes.
@@ -7,16 +7,16 @@ If you had to create one or more tables to store the Book data in a MS SQL datab
 - the table designe can be improved, but i just went with minimal approach to demonstrate the functionality with the limited time.
 
 Write another API method to add an entry to the Book table.
--Done 
+- Done 
 Post - /api/books
 
 Write stored procedures in MS SQL Server for steps 1 and 3, and use them in separate API methods to return the same results.
--Done
+- Done
 Get - /api/GetBooksBySP
 Post - /api/PostBooksBySP
 
 Write an API method to return the total price of all books in the database.
--Done
+- Done
 Get - /api/books/GetTotalBooksPrice
 
 If you have a large list of these in memory and want to save the entire list to the MS SQL Server database, what is the most efficient way to save the list with only one call to the DB server?
